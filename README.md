@@ -24,7 +24,7 @@ This repository is designed to act as a **single source of truth** for prompts u
 ```
 prompts/
 ├── meta/        # Personas, global rules, style guides
-├── utilities/   # Small, focused helpers (e.g. comment analysis)
+├── utilities/   # Small, focused helpers (e.g. comment analysis, structure validation)
 └── workflows/   # Task-oriented prompts (e.g. test generation, reviews)
 
 ```
@@ -40,7 +40,7 @@ prompts/
 - **Utility prompts**  
     Narrow, reusable instructions for specific transformations or checks.
     
-
+    
 ---
 
 ## How to Use
@@ -55,6 +55,7 @@ To update later:
 
 `git subtree pull --prefix=prompts \   git@github.com:<your-org-or-user>/prompt-library.git main --squash`
 
+
 ---
 
 ### 2. Raw GitHub import (no Git integration)
@@ -64,6 +65,7 @@ You can reference individual prompts via raw URLs:
 `https://raw.githubusercontent.com/<your-org-or-user>/prompt-library/main/prompts/meta/persona-qa-engineer.md`
 
 This works well for quick experiments or external tools.
+
 
 ---
 
@@ -86,7 +88,8 @@ This works well for quick experiments or external tools.
     - standalone
         
     - and as building blocks combined with others
-        
+
+- Run `prompts/utilities/structure-analyzer.md` on new or modified prompts to validate structural compliance.
 
 ---
 
@@ -100,5 +103,4 @@ Breaking changes to prompt behavior should:
     
 - and documented in commit messages or release notes (when introduced).
     
-
 Formal npm / GitHub Package distribution may be added later.

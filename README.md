@@ -24,8 +24,9 @@ This repository is designed to act as a **single source of truth** for prompts u
 ```
 prompts/
 ├── meta/        # Personas, global rules, style guides
-├── workflows/   # Task-oriented prompts (e.g. test generation, reviews)
-└── utilities/   # Small, focused helpers (e.g. comment analysis)
+├── utilities/   # Small, focused helpers (e.g. comment analysis)
+└── workflows/   # Task-oriented prompts (e.g. test generation, reviews)
+
 ```
 
 ### Prompt Types

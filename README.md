@@ -61,6 +61,8 @@ To update later:
 git subtree pull --prefix=prompts --squash https://github.com/MSroczynski3/testing-prompts.git main
 ```
 
+> **Tip:** You can customize the `--prefix` to place prompts in a different folder, e.g. `.ai-artifacts`, `.github/prompts`, or any path that fits your project structure.
+
 ---
 
 ### 2. Raw GitHub import (no Git integration)
